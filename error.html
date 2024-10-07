@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="3;URL=index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面不存在！</title>
+    <!-- <style>
+        #countdown {
+          font-size: 50px;
+          text-align: center;
+        }
+      </style> -->
+      <style>
+        #br{
+            white-space:nowrap
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+          var countdownElement = document.getElementById("countdown");
+          var count = 3;
+    
+          var countdown = setInterval(function() {
+            countdownElement.innerHTML = count;
+            count--;
+    
+            if (count < 0) {
+              clearInterval(countdown);
+              countdownElement.innerHTML = "";
+            }
+          }, 1000);
+        });
+      </script>
+</head>
+<body>
+    <a nowrap>页面不存在，将在</a><a  nowrap id="countdown">3</a><a nowrap>秒后自动跳转</a>
+</body>
+</html>
