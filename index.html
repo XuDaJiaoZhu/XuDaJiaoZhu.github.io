@@ -22,6 +22,19 @@
             text-shadow: 10px 10px 5px black;
         }
     </style>
+    <style>
+        .hide{
+            width: 1px;
+            height: 1px;
+            mask-repeat: no-repeat;
+            background: url('imgs/beijing.jpg');
+            color: #eee;
+            text-align: center;
+            font-size: 0.1px;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
     <main>
         <img src="a1.bmp" alt="这个图片没了" width="200" height="200">
         <p>徐大快乐网</p>
@@ -40,7 +53,9 @@
             <!-- <il><a href="txts.html">文章</a></il> -->
             <br>
             <a href="/Pictures">测试用，不要点</a>
+            <br>
             <il><a href="update.html" style="color: red;">更新公告</a></il>
+            <il><a href = "file.html" class="hide" >file</a></il>
         </ul>
         <div class="green"></div>
     </main>
